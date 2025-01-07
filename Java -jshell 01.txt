@@ -1,0 +1,62 @@
+Printing output to console with java 
+
+-> Passing a expression to predefined function or method in java 
+   
+   System.out.println(3*6)
+
+-> System is class in java it contains variable out which contanis method called println
+
+-> method_path(parameter)
+
+
+Examples to print (evaluation) in console 
+
+-> jshell> System.out.println(3*6)
+18
+
+-> jshell> System.out.println(3*5)
+15
+
+-> jshell> System.out.println(10.5/2)
+5.25
+
+
+
+-> String values are not evaluated
+
+-> String literals=> "something between dobule quatoes"
+
+
+Examples to print (string) in console
+
+-> jshell> System.out.println("2x6")
+2x6
+
+->jshell> System.out.println("5*2=10")
+5*2=10
+
+
+Practice examples 
+
+1) Print hello world as a string
+
+->jshell> System.out.println("Hello World")
+Hello World
+
+2) prnit 5*3 as string without evaluation
+
+->jshell> System.out.println("5*3")
+5*3
+
+3) Print 5*3 with evaluation 
+
+->jshell> System.out.println(5*3)
+15
+
+4) Print how many seconds in a day
+
+->jshell> System.out.println(60*60*24)
+86400
+
+
+
