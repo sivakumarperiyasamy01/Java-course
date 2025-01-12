@@ -1,0 +1,78 @@
+Printf method
+
+-> Printf method allows formating and printing values from expressions and we are replacing string literals from passed parameters values
+-> println metthod print as it is
+ 
+
+examples (print integer)
+
+-> System.out.printf("%d*%d,%d,%d-%d",5,7,3,8,2)
+5*7,3,8-2$6 ==> java.io.PrintStream@69663380
+
+-> jshell> System.out.printf("%d+%d+%d=%d",5,6,7,5+6+7).println()
+5+6+7=18
+
+
+examples (print string)
+
+->jshell> System.out.printf("print %s","Testing").println()
+print Testing
+
+
+ 
+examples (print floating point)
+
+->jshell> System.out.printf("%f,%f,%f",5.5,6.2,1.5).println()
+5.500000,6.200000,1.500000
+
+
+varaibles in java 
+
+-> Type Name=value 
+
+-> Type means type of variable
+-> Name= variable name 
+-> Value = assignment value to variables 
+
+-> Creating varaibles and print using printf method
+
+jshell> int a=20
+a ==>20 	
+
+jshell> int b=15
+b ==> 15
+
+jshell> int c=85
+c ==> 85
+
+
+jshell> System.out.printf("%d+%d+%d=%d",a,b,c,a+b+c).println()
+20+15+85=120
+
+
+-> change the variable values of a,b,c print 
+
+
+jshell> a=25
+a ==> 25
+
+jshell> b=63
+b ==> 63
+
+jshell> c=45
+c ==> 45
+
+
+jshell> System.out.printf("%d+%d+%d=%d",a,b,c,a+b+c).println()
+25+63+45=133
+
+
+
+// varaibles in depth 
+-> Variables and memory 
+-> Naming a variables 
+-> Variables types 
+-> Assignment operators 
+
+
+
