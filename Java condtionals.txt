@@ -1,0 +1,184 @@
+-> Condtionals  ( for loop combine with if conditionals)
+
+=> if condition is true will execute the follwing statement
+
+
+=> if(condition)
+        -> Statement 
+
+
+jshell> int number1=25
+number1 ==> 25
+
+jshell> int number2=30
+number2 ==> 30
+
+jshell> if(number1>number2)
+   ...> System.out.println("print number 1")
+
+jshell> number1=50
+number1 ==> 50
+
+jshell> if(number1>number2)
+   ...> System.out.println("print number 1")
+print number 1
+
+
+-->for loop 
+
+
+=> for(initilisation, condition, update){
+statement
+}
+
+Practice examples 
+
+1) Multiplication table print using forloop
+
+int i;
+
+jshell> for(i=1; i<=10;i++){
+   ...>     System.out.printf("%d*%d=%d", 5,i,5*i).println();
+   ...> }
+5*1=5
+5*2=10
+5*3=15
+5*4=20
+5*5=25
+5*6=30
+5*7=35
+5*8=40
+5*9=45
+5*10=50
+
+
+
+2) Printing 7 tables multiplication table 
+
+jshell> for(int i=1; i<=10;i++){
+   ...>     System.out.printf("%d*%d=%d", 7,i,7*i).println();
+   ...> }
+7*1=7
+7*2=14
+7*3=21
+7*4=28
+7*5=35
+7*6=42
+7*7=49
+7*8=56
+7*9=63
+7*10=70
+
+jshell>
+
+
+
+3) Printing 6 multiplication tables 
+
+jshell> for(int i=1;i<=10;i++){
+   ...>     System.out.printf("%d*%d=%d", 6,i,6*i).println();
+   ...> }
+6*1=6
+6*2=12
+6*3=18
+6*4=24
+6*5=30
+6*6=36
+6*7=42
+6*8=48
+6*9=54
+6*10=60
+
+jshell>
+
+4) Printing 10 th tables 
+
+jshell> for(int i=1;i<=10;i++){
+   ...>     System.out.printf("%d*%d=%d",10,i,10*i).println();
+   ...> }
+10*1=10
+10*2=20
+10*3=30
+10*4=40
+10*5=50
+10*6=60
+10*7=70
+10*8=80
+10*9=90
+10*10=100
+
+5) Print numbers from 1 to 10 
+
+jshell> for(int i=1;i<=10;i++){
+   ...>     System.out.printf("%d",i).println();
+   ...> }
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+6) Print numbers from 10 to 1 
+
+jshell> for(int i=10; i>=1;i--){
+   ...>     System.out.printf("%d",i).println();
+   ...> }
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+7) Print squres for first 10 numbers 
+
+jshell> for(int i=1;i<=10;i++){
+   ...>     System.out.printf("%d*%d=%d",i,i,i*i).println();
+   ...> }
+1*1=1
+2*2=4
+3*3=9
+4*4=16
+5*5=25
+6*6=36
+7*7=49
+8*8=64
+9*9=81
+10*10=100
+
+8) Print the squre of first 10 even nuymbers 
+
+
+jshell> for(int i=1; i<=10;i++){
+   ...>     if(i%2==0){
+   ...>         System.out.printf("%d",i).println();
+   ...>     }
+   ...> }
+2
+4
+6
+8
+10
+
+9) Print the first 10 odd numbers 
+
+jshell> for(int i=1; i<=10;i++){
+   ...>     if(i%2!=0){
+   ...>         System.out.printf("%d",i).println();
+   ...>     }
+   ...> }
+1
+3
+5
+7
+9
