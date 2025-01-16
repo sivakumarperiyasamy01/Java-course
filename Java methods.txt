@@ -1,0 +1,195 @@
+--> Java methods 
+
+  --> ReturntypeNameofTheMethod(){
+         body of the method
+      }
+
+
+ > void method = > if we are not returning something from method we can use this void type
+
+examples 
+
+1) Print hello world thrice '
+
+jshell> void sayHelloWorldTrice(){
+   ...>     System.out.println("Hello world");
+   ...>     System.out.println("Hello world");
+   ...>     System.out.println("Hello World");
+   ...> }
+|  created method sayHelloWorldTrice()
+
+jshell> sayHelloWorldTrice()
+Hello world
+Hello world
+Hello World
+
+
+2) Examples 2
+
+jshell> void printMethod(){
+   ...>     System.out.println("i have created my first variable");
+   ...>     System.out.println("i have created my first method");
+   ...>     System.out.println("i have created my first loop");
+   ...>     System.out.println("im excited to learn java");
+   ...> }
+|  created method printMethod()
+
+jshell> printMethod()
+i have created my first variable
+i have created my first method
+i have created my first loop
+im excited to learn java
+
+
+=>  Java methods arguments and parameters
+
+
+=> ReturnType nameOfTheMethod(type argumentNmae){
+      // statement
+}
+
+=> nameOfTheMethod(5)
+
+
+
+1) Excercise print hello world 5 times using arguments and parametrs 
+
+void sayHelloWorld(int noOfTimes)
+       {
+
+       for(int i=0;i<=noOfTimes;i++){
+
+           System.out.println("Hello World");
+       }
+       }
+
+jshell> sayHelloWorld(5)
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+
+
+2) Print numbers from 1 to 10 using arguments and paramets 
+
+jshell> void printNumbers(int noOfTimes){
+   ...>     for(int i=1;i<=noOfTimes;i++){
+   ...>         System.out.println(i);
+   ...>     }
+   ...> }
+|  created method printNumbers(int)
+
+jshell> printNumbers(10)
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+3) Print square numbers from 1 to 5 using arguments and paramets 
+
+jshell> void printSquares(int noOfTimes)
+   ...>     {
+   ...>     for(int i=1;i<=noOfTimes;i++){
+   ...>         System.out.println(i*i);
+   ...>     }
+   ...> }
+|  created method printSquares(int)
+
+jshell> printSquares(5)
+1
+4
+9
+16
+25
+
+
+4) print multiplication table using methods
+
+jshell> void PrintMultiplicationTable(int n){
+   ...>     for(int i=1;i<=n;i++){
+   ...>         System.out.printf("%d*%d=%d",5,i,5*i).println();
+   ...>     }
+   ...> }
+ created method PrintMultiplicationTable(int)
+
+jshell> PrintMultiplicationTable(5)
+5*1=5
+5*2=10
+5*3=15
+5*4=20
+5*5=25
+
+
+5) print the multiplication tables based on arguments passed
+
+jshell> void PrintMultiplicationTable(int n){
+   ...>     for(int i=1;i<=n;i++){
+   ...>         System.out.printf("%d*%d=%d",n,i,n*i).println();
+   ...>     }
+   ...> }
+|  modified method PrintMultiplicationTable(int)
+
+
+jshell> PrintMultiplicationTable(6)
+6*1=6
+6*2=12
+6*3=18
+6*4=24
+6*5=30
+6*6=36
+
+jshell> PrintMultiplicationTable(7)
+7*1=7
+7*2=14
+7*3=21
+7*4=28
+7*5=35
+7*6=42
+7*7=49
+
+
+
+6) Find sum of two numbers using multiple arguments
+
+jshell> void sumOfTwoNumbers(int a,int b){
+   ...>     System.out.println(a+b);
+   ...> }
+|  created method sumOfTwoNumbers(int,int)
+
+jshell> sumOfTwoNumbers(2,3)
+5
+
+
+7) Find sum of three numbers using method 
+
+jshell> int sumOfThreeNumbers(int number1,int number2,int number3){
+   ...>     int sum=number1+number2+number3;
+   ...> return sum;
+   ...> }
+|  created method sumOfThreeNumbers(int,int,int)
+
+jshell> int sum=sumOfThreeNumbers(4,8,9)
+sum ==> 21
+
+
+
+8) find the third angle of triangle using 2 angles 
+
+jshell> int triangle(int tr1,int tr2){
+   ...>     int sum=tr1+tr2;
+   ...>     int thirdangle=180-sum;
+   ...>     return thirdangle;
+   ...> }
+|  created method triangle(int,int)
+
+jshell> int thirdangle=triangle(80,50)
+thirdangle ==> 50
