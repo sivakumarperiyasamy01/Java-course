@@ -1,0 +1,195 @@
+List Interface in Collections
+
+jshell> List<String>Words=List.of("Apple","orange","Mango");
+Words ==> [Apple, orange, Mango]
+
+jshell> Words.get(0)
+$2 ==> "Apple"
+
+jshell> Words.size()
+$3 ==> 3
+
+jshell> Words.contains("Dog")
+$4 ==> false
+
+jshell> Words.isEmpty()
+$5 ==> false
+
+jshell> Words.indexOf("Dog")
+$6 ==> -1
+
+
+
+// ArrayList
+
+ List<Integer>Numbers=List.of(1,2,3,6,4)
+Numbers ==> [1, 2, 3, 6, 4]
+
+
+// List- Interface 
+// new ArrayList - creating a new objects using Arraylsit class 
+// ( numbers) - passing the existing lIst 
+
+jshell> List<Integer>ArrayListnumbers= new ArrayList<Integer>(Numbers)
+ArrayListnumbers ==> [1, 2, 3, 6, 4]
+
+jshell> ArrayListnumbers.add(10)
+$10 ==> true
+
+jshell> ArrayListnumbers
+ArrayListnumbers ==> [1, 2, 3, 6, 4, 10]
+
+
+// Linked List 
+
+
+jshell> List<Integer>Linkednumlist= new LinkedList<>(Numbers);
+Linkednumlist ==> [1, 2, 3, 6, 4]
+
+jshell> LinkednumList.add(1000)
+
+jshell> Linkednumlist.add(1000)
+$13 ==> true
+
+jshell> Linkednumlist
+Linkednumlist ==> [1, 2, 3, 6, 4, 1000]
+
+
+// Vector list 
+
+jshell> List<Integer>vectorListarray= new Vector<>(Numbers)
+vectorListarray ==> [1, 2, 3, 6, 4]
+
+jshell> vectorListarray.add(450)
+$16 ==> true
+
+jshell> vectorListarray
+vectorListarray ==> [1, 2, 3, 6, 4, 450]
+
+
+
+// Arraylsit methods 
+
+
+
+jshell> List<String>Animal= List.of("Lion","zeepra","goat")
+Animal ==> [Lion, zeepra, goat]
+
+jshell> List<String>AnimalArraylist= new ArrayList<>(Animal)
+AnimalArraylist ==> [Lion, zeepra, goat]
+
+jshell> AnimalArraylist.add(2,"monkey")
+
+jshell> AnimalArraylist
+AnimalArraylist ==> [Lion, zeepra, monkey, goat]
+
+jshell> AnimalArraylist.set(2,"tiger")
+$5 ==> "monkey"
+
+jshell> AnimalArraylist
+AnimalArraylist ==> [Lion, zeepra, tiger, goat]
+
+
+jshell> List<String>newarraylsit= new ArrayList<>()
+newarraylsit ==> []
+
+
+jshell> List<String>newarraylist= new ArrayList<>()
+newarraylist ==> []
+
+jshell> newarraylist.add("bear")
+$9 ==> true
+
+jshell> newarraylist
+newarraylist ==> [bear]
+
+
+jshell> newarraylist.addAll(AnimalArraylist)
+$11 ==> true
+
+jshell> newarraylist
+newarraylist ==> [bear, Lion, zeepra, tiger, goat]
+
+jshell> newarraylist.remove(2)
+$13 ==> "zeepra"
+
+jshell> newarraylist
+newarraylist ==> [bear, Lion, tiger, goat]
+
+
+
+// loop through list elements from strings and integers 
+
+1) ArrayList 
+2) Linked list 
+3) Vector list 
+
+loop options area 
+
+1) For loop 
+2) For each loop 
+3) Iterator 
+
+
+jshell> for(Integer value:innumbers){
+   ...>     System.out.println(value);
+   ...> }
+50
+60
+78
+96
+30
+
+
+
+
+jshell> while(iteratenum.hasNext()){
+   ...>     System.out.println(iteratenum.next());
+   ...> }
+50
+60
+78
+96
+30
+
+
+
+// if i want to remove particular item from the array i can use iterator bext way 
+
+List<String>names= List.of("mango","apple","banana")
+names ==> [mango, apple, banana]
+
+jshell> ArrayList<String>arraynames= new ArrayList<>(names);
+arraynames ==> [mango, apple, banana]
+
+ Iterator<String>itword= arraynames.iterator()
+itword ==> java.util.ArrayList$Itr@28c97a5
+
+jshell> while(itword.hasNext()){
+   ...>     if(itword.next().endsWith("o")){
+   ...>
+   ...>         itword.remove();
+   ...>     }
+   ...> }
+
+jshell> arraynames
+arraynames ==> [apple, banana]
+
+
+
+// Collections. sort method 
+
+jshell> List<Integer>Numb= List.of(2,8,9,7,1)
+Numb ==> [2, 8, 9, 7, 1]
+
+jshell> List<Integer>newal= new ArrayList<>(Numb)
+newal ==> [2, 8, 9, 7, 1]
+
+jshell> Collections.sort(newal)
+
+jshell> newal
+newal ==> [1, 2, 7, 8, 9]
+
+
+
+
