@@ -1,0 +1,32 @@
+// Set interface 
+
+1) 1 st chapter notes
+
+// Set.of method creates immutable array 
+// Set only stores unique values only 
+// it doesnot allow to add duplicates items in an array
+// set doesnot care about postions - we cant add or remove elements based on postion 
+//Hash set and Tree set are implementations of set interface( mutable array creation 
+
+ Set<String>SetArray= Set.of("Apple","Banana", "guiva")
+SetArray ==> [Apple, Banana, guiva]
+                 
+jshell> Set<String>newsetarray= new HashSet<>(SetArray);
+newsetarray ==> [Apple, guiva, Banana]
+
+jshell> newsetarray.add("mango")
+$4 ==> true
+
+jshell> newsetarray
+newsetarray ==> [Apple, guiva, Banana, mango]
+
+jshell> newsetarray.add("mango")
+$6 ==> false
+
+jshell> newsetarray
+newsetarray ==> [Apple, guiva, Banana, mango]
+
+
+
+2) 2nd chapter notes
+
