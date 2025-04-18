@@ -30,3 +30,132 @@ newsetarray ==> [Apple, guiva, Banana, mango]
 
 2) 2nd chapter notes
 
+// Hands on HashSet , TreeSet, LinkedHashset
+
+1) HashSet
+	-> It doesnot care about what order we are inserting elements 
+	-> It doesnot care about sorting also
+
+Set<Integer>numbers= new HashSet<>();
+numbers ==> []
+
+jshell> numbers.add(50)
+$9 ==> true
+
+jshell> numbers.add(100)
+$10 ==> true
+
+jshell> numbers.add(200)
+$11 ==> true
+
+jshell> numbers.add(750)
+$12 ==> true
+
+jshell> numbers
+numbers ==> [50, 100, 200, 750]
+
+jshell> numbers.add(10)
+$14 ==> true
+
+jshell> numbers
+numbers ==> [50, 100, 200, 10, 750]
+
+
+2) LinkedHashSet
+	-> It stores an element in which order we are inserting
+	-> It doesnot care about sorting 
+
+jshell> Set<String>items= new LinkedHashSet<>()
+items ==> []
+
+jshell> items.add("cloths")
+$17 ==> true
+
+jshell> items.add("shoes")
+$18 ==> true
+
+jshell> items.add("track")
+$19 ==> true
+
+jshell> items.add("care")
+$20 ==> true
+
+jshell> items
+items ==> [cloths, shoes, track, care]
+
+
+3) TreeSet
+
+        ->It care about in which order we are inserting  an element 
+        -> It care about sorting also 
+
+jshell> Set<Integer>num= new TreeSet<>()
+num ==> []
+
+jshell> num.add(450)
+$23 ==> true
+
+jshell> num.add(80)
+$24 ==> true
+
+jshell> num.add(70)
+$25 ==> true
+
+jshell> num.add(10)
+$26 ==> true
+
+jshell> num.add(0)
+$27 ==> true
+
+jshell> num
+num ==> [0, 10, 70, 80, 450]
+
+
+
+2) TreeSet interface implements  navigable Set interface 
+
+
+jshell> TreeSet<Integer>numbers= new TreeSet<>(Set.of(55,47,89,63,21))
+numbers ==> [21, 47, 55, 63, 89]
+
+// it returns lessthan value 
+jshell> numbers.floor(55)
+$2 ==> 55
+
+// it returns lessthan value 
+jshell> numbers.lower(47)
+$4 ==> 21
+
+// it returns greater than euqal to 
+jshell> numbers.ceiling(47)
+$6 ==> 47
+
+
+jshell> numbers.ceiling(63)
+$7 ==> 63
+
+// it returns greater than value
+jshell> numbers.higher(55)
+$8 ==> 63
+
+// it returns value between 
+jshell> numbers.subSet(20,30)
+$9 ==> [21]
+
+// it return valye betwwen with inclusive of both start and end value 
+jshell> numbers.subSet(20,true, 65, true)
+$10 ==> [21, 47, 55, 63]
+
+// it return valye betwwen with exclusive of both start and end value 
+jshell> numbers.subSet(20, false, 63, false)
+$11 ==> [21, 47, 55]
+
+// it returns the value of before the value 
+jshell> numbers.headSet(50)
+$12 ==> [21, 47]
+
+// it return the value after50
+jshell> numbers.tailSet(50)
+$13 ==> [55, 63, 89]
+
+

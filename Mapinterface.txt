@@ -1,0 +1,50 @@
+1) Map interface 
+
+jshell> Map<String,Integer> maparray= Map.of("A",5,"B",78,"C",52)
+maparray ==> {C=52, B=78, A=5}
+
+jshell> maparray
+maparray ==> {C=52, B=78, A=5}
+
+jshell> maparray.size()
+$3 ==> 3
+
+jshell> maparray.get("z")
+$4 ==> null
+
+jshell> maparray.get("B")
+$6 ==> 78
+
+jshell> maparray.isEmpty()
+$7 ==> false
+
+jshell> maparray.containsKey("A")
+$8 ==> true
+
+jshell> maparray.containsValue(78)
+$9 ==> true
+
+jshell> maparray.keySet()
+$10 ==> [C, B, A]
+
+jshell> maparray.values()
+$11 ==> [52, 78, 5]
+
+
+2) To create mutable array using Map interface 
+
+jshell> Map<String,Integer> newMaparray= new HashMap<>(maparray)
+newMaparray ==> {A=5, B=78, C=52}
+
+jshell> newMaparray.put("a",50)
+$13 ==> null
+
+jshell> newMaparray
+newMaparray ==> {A=5, a=50, B=78, C=52}
+
+jshell> newMaparray.put("A",99)
+$15 ==> 5
+
+jshell> newMaparray
+newMaparray ==> {A=99, a=50, B=78, C=52}
+
