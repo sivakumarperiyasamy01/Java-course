@@ -1,0 +1,46 @@
+// tre map navigable methods 
+
+jshell> TreeMap<String, Integer>mapdata= new TreeMap<>()
+mapdata ==> {}
+
+jshell> mapdata.put("a",10)
+$3 ==> null
+
+jshell> mapdata.put("z",12)
+$4 ==> null
+
+jshell> mapdata.put("g",56)
+$5 ==> null
+
+jshell> mapdata.put("p",47)
+$6 ==> null
+
+jshell> mapdata
+mapdata ==> {a=10, g=56, p=47, z=12}
+
+jshell> mapdata.higherKey("c")
+$8 ==> "g"
+
+jshell> mapdata.ceilingKey("g")
+$9 ==> "g"
+
+jshell> mapdata.lowerKey("g")
+$10 ==> "a"
+
+jshell> mapdata.floorKey("b")
+$11 ==> "a"
+
+jshell> mapdata.floorKey("g")
+$12 ==> "g"
+
+jshell> mapdata.firstEntry()
+$13 ==> a=10
+
+jshell> mapdata.lastEntry()
+$14 ==> z=12
+
+jshell> mapdata.subMap("c","z")
+$15 ==> {g=56, p=47}
+
+jshell> mapdata.subMap("c",true, "z", true)
+$16 ==> {g=56, p=47, z=12}
