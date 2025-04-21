@@ -1,0 +1,70 @@
+// difference between Hash Map, LinkedHashMap, Tree Map
+
+1) Hash Map
+  -> it stores as key valyue pairs 
+  -> it doesnot care about insertion or deletion order 
+
+jshell> HashMap<String,Integer>newmap= new HashMap<>()
+newmap ==> {}
+
+jshell> newmap.put("z",5)
+$2 ==> null
+
+jshell> newmap.put("p",10)
+$3 ==> null
+
+jshell> newmap.put("a",78)
+$4 ==> null
+
+jshell> newmap.put("y",56)
+$5 ==> null
+
+jshell> newmap
+newmap ==> {p=10, a=78, y=56, z=5}
+
+
+2) LinkedHashMap
+ 
+  -> it stores the element based on insertion order .
+
+jshell> LinkedHashMap<String, Integer>linkedmap= new LinkedHashMap<>()
+linkedmap ==> {}
+
+jshell> linkedmap.put("k",69)
+$8 ==> null
+
+jshell> linkedmap.put("q",45)
+$9 ==> null
+
+jshell> linkedmap.put("r",74)
+$10 ==> null
+
+jshell> linkedmap
+linkedmap ==> {k=69, q=45, r=74}
+
+
+3) TreeMap
+  -> it stores in element in shorted order 
+
+jshell> TreeMap<String,Integer>treemap= new TreeMap<>()
+treemap ==> {}
+
+jshell> treemap.put("r",10)
+$13 ==> null
+
+jshell> treemap.put("a",45)
+$14 ==> null
+
+jshell> treemap.put("w",89)
+$15 ==> null
+
+jshell> treemap.put("j",10)
+$16 ==> null
+
+jshell> treemap
+treemap ==> {a=45, j=10, r=10, w=89}
+
+
+
+
+
