@@ -1,7 +1,4 @@
 Functional Programming 
-
-To Recall follow this
- 
 1) Functional Runner.java
 2) Excercise Runner.java
 3) SumlistRunner.java
